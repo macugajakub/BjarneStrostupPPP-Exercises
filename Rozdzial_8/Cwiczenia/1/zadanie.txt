@@ -1,0 +1,16 @@
+1. Utwórz trzy pliki: my.h, my.cpp i use.cpp. Plik my.h powinien mieæ nastêpuj¹c¹ zawartoœæ:
+extern int foo;
+void print_foo();
+void print(int);
+Plik Ÿród³owy my.cpp zawiera dyrektywê #include do³¹czaj¹c¹ pliki my.h i std_lib_facilities.h
+oraz definicje funkcji print_foo() drukuj¹cej wartoœæ foo za pomoc¹ cout i funkcji
+print(int i) drukuj¹cej wartoœæ i za pomoc¹ cout.
+Plik Ÿród³owy use.cpp zawiera dyrektywê #include do³¹czaj¹c¹ zawartoœæ pliku my.h, definicjê
+funkcji main(), która ustawia foo na wartoœæ 7 i drukuje j¹ za pomoc¹ funkcji print_foo()
+oraz drukuje wartoœæ 99 za pomoc¹ funkcji print(). Zauwa¿, ¿e do pliku use.cpp nie jest
+do³¹czana zawartoœæ pliku std_lib_facilities.h, poniewa¿ nic, co siê w nim znajduje, nie jest
+tam bezpoœrednio u¿ywane.
+Skompiluj te pliki i uruchom je. W systemie Windows w projekcie bêd¹ musia³y byæ obecne
+oba pliki Ÿród³owe oraz w piku use.cpp nale¿y wpisaæ { char cc; cin>>cc; }, aby zobaczyæ
+dane na wyjœciu. PodpowiedŸ: aby móc u¿ywaæ strumienia cin, nale¿y dodaæ dyrektywê
+#include <iostream>.
