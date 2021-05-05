@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1620164295 source:c:\users\macug\documents\github\bjarnestrostupppp-exercises\rozdzial_8\cwiczenia\2\main.cpp
+	<iostream>
+	"swap.h"
+
+1620163119 source:c:\users\macug\documents\github\bjarnestrostupppp-exercises\rozdzial_8\cwiczenia\2\swap.cpp
+	"swap.h"
+
+1620163019 c:\users\macug\documents\github\bjarnestrostupppp-exercises\rozdzial_8\cwiczenia\2\swap.h
+

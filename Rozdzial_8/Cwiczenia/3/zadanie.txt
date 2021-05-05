@@ -1,0 +1,19 @@
+3. Napisz program wykorzystuj¹cy jeden plik zawieraj¹cy trzy przestrzenie nazw, X, Y i Z, w taki
+sposób, aby poni¿sza funkcja main() dzia³a³a poprawnie:
+int main()
+{
+X::var = 7;
+X::print(); // Wydrukuj var z przestrzeni X
+using namespace Y;
+var = 9;
+print(); // Wydrukuj var z przestrzeni Y
+{ using Z::var;
+using Z::print;
+var = 11;
+print(); // Wydrukuj var z przestrzeni Z
+}
+print(); // Wydrukuj var z przestrzeni Y
+X::print(); // Wydrukuj var z przestrzeni X
+}
+W ka¿dej przestrzeni nazw musi znajdowaæ siê zmienna o nazwie var i funkcja print()
+drukuj¹ca odpowiedni¹ zmienn¹ var za pomoc¹ cout.
